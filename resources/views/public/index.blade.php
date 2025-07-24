@@ -1,6 +1,12 @@
 @extends('public.layout.layout')
 @section('title','')
 @section('pageStyleLinks')
+
+{{-- Fav Icon --}}
+
+<link href="{{asset('public/assets/img/favicon.png')}}" rel="icon">
+<link href="{{asset('public/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
 <link rel="stylesheet" href="{{asset('public/frontend/css/owl.carousel.min.css')}}">
 <link rel="stylesheet" href="{{asset('public/frontend/css/owl.theme.default.min.css')}}">
 @endsection
