@@ -23,9 +23,24 @@
                 <div class="page-widget border p-4 mb-4">
                     <h4>Contact Info</h4>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-envelope"></i> {{$user->email}}</li>
-                        <li><i class="bi bi-phone"></i> {{$user->phone}}</li>
+                        <li><i class="bi bi-envelope"></i><a href="mailto:{{$user->email}}"></a></li>            
+                        <li><i class="bi bi-phone"></i><a href="tel:{{$user->phone}}"></a></li>
                     </ul>
+                    {{-- <ul class="list-unstyled">
+                                @if($settings->show_contact == '1')
+                                <li>
+                                    <i class="bi bi-phone"></i>
+                                    <a href="tel:{{$settings->site_contact}}">{{$settings->site_contact}}</a>
+                                </li>
+                                @endif
+                            
+                                @if($settings->show_email == '1')
+                                <li>
+                                    <i class="bi bi-envelope"></i>
+                                    <a href="mailto:{{$settings->site_email}}">{{$settings->site_email}}</a>
+                                </li>
+                                @endif
+                            </ul> --}}
                 </div>
             </div>
             <div class="col-md-9">

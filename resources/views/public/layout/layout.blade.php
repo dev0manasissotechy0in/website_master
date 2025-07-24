@@ -151,10 +151,17 @@
                             <h5>Contact</h5>
                             <ul class="contact-info">
                                 @if($settings->show_contact == '1')
-                                <li><i class="bi bi-telephone-fill"></i> {{$settings->site_contact}}</li>
+                                <li>
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <a href="tel:{{$settings->site_contact}}">{{$settings->site_contact}}</a>
+                                </li>
                                 @endif
+                            
                                 @if($settings->show_email == '1')
-                                <li><i class="bi bi-envelope"></i> {{$settings->site_email}}</li>
+                                <li>
+                                    <i class="bi bi-envelope"></i>
+                                    <a href="mailto:{{$settings->site_email}}">{{$settings->site_email}}</a>
+                                </li>
                                 @endif
                             </ul>
                         </div>
