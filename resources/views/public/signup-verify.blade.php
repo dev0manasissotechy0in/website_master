@@ -12,6 +12,7 @@
                 <form class="border p-4 pt-5 position-relative" id="signup-verify" method="POST">
                     <h3>Enter OTP!!!</h3>
                     <span class="mb-3 d-block">OTP sent to : <b>{{$email}}</b></span>
+                    <span class="mb-3 d-block">Due to server load, OTP delivery might be slightly delayed. Kindly wait a moment</span>
                     @csrf
                     <div class="form-group mb-3">
                         <label for="">Enter OTP</label>

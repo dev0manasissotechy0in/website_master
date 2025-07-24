@@ -22,7 +22,7 @@
                     <div class="card">
                         <div class="card-body py-3">
                             {{-- <h5 class="card-title">Custom Styled Validation</h5> --}}
-                            <form class="g-3 needs-validation" id="addBlog">
+                                <form class="g-3 needs-validation" id="addBlog">
                                 @csrf
                                 <div class="form-group mb-3">
                                     <label class="form-label">Title</label>

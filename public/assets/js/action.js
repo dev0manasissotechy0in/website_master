@@ -200,12 +200,14 @@ $(function () {
             category: { required: true }, 
                                    seo_description: { required: true }, 
             seo_keyword: { required: true }, 
+            status: { required: true } // ✅ Added status validation
         },
         messages: { 
             blog_title: { required: "Title is required." }, 
             category: { required: "Category is required." }, 
                         seo_description: { required: "SEO Description is required." },
             seo_keyword: { required: "SEO Keywords is required." },
+            status: { required: "Status is required." } // ✅ Error message for status
         },
         submitHandler: function (form) {
             var formdata = new FormData(form);
