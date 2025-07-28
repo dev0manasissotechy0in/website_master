@@ -45,7 +45,7 @@
                     @endif
                 @endfor
             </ul>
-            <div class="product-price">${{$product->price}}</div>
+            <div class="product-price">₹{{$product->price}}</div>
         </div>
     </div>
     <div class="product-author d-flex justify-content-between mt-auto">
