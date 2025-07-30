@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.error-image {
+    max-width: 90%;
+    width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background-color: #0056b3;
+}
