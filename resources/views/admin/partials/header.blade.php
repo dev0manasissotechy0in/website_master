@@ -2,7 +2,7 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-    <a href="index.html" class="logo d-flex align-items-center">
+    <a href="{{url('admin/dashboard')}}" class="logo d-flex align-items-center">
         @if(site_logo() != '')
         <img src="{{asset('public/settings/'.site_logo())}}" alt="">
         @else
